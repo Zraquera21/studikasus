@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="haeru"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-11 09.01.46 AM"/>
+        <attribute name="created" value="aGFlcnU7SklIQU47MjAyMy0wMy0wODswOS4yNi4zOSBBTTsyMTQ3"/>
+        <attribute name="edited" value="aGFlcnU7SklIQU47MjAyMy0wMy0xMTswOS4wMS40NiBBTTsyOzIyNDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan panjang sisi&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a=b&amp;&amp;b=c">
+                <then>
+                    <output expression="&quot;sama sisi&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a=b||a=c&amp;&amp;b=c">
+                        <then>
+                            <output expression="&quot;sama kaki&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a!=b&amp;&amp;a!=c&amp;&amp;b!=c">
+                                <then>
+                                    <output expression="sembarang" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

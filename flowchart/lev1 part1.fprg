@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="haeru"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 12.55.35 PM"/>
+        <attribute name="created" value="aGFlcnU7SklIQU47MjAyMy0wMi0yMjswOS4zMC4yMSBBTTsyMTI4"/>
+        <attribute name="edited" value="aGFlcnU7SklIQU47MjAyMy0wMi0yMjsxMi41NS4zNSBQTTsxOzIyNTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, max" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <assign variable="max" expression="a"/>
+                </then>
+                <else>
+                    <assign variable="max" expression="b"/>
+                </else>
+            </if>
+            <output expression="&quot; angka terbesar &quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

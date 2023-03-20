@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="haeru"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-11 09.11.23 AM"/>
+        <attribute name="created" value="aGFlcnU7SklIQU47MjAyMy0wMy0xMTswOS4wMi41OCBBTTsyMTM2"/>
+        <attribute name="edited" value="aGFlcnU7SklIQU47MjAyMy0wMy0xMTswOS4xMS4yMyBBTTsxOzIyMzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka1, angka2, angka3, mid" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan angka ke-1&quot;" newline="True"/>
+            <input variable="angka1"/>
+            <output expression="&quot;masukkan angka ke-2&quot;" newline="True"/>
+            <input variable="angka2"/>
+            <output expression="&quot;masukkan angka ke-3&quot;" newline="True"/>
+            <input variable="angka3"/>
+            <if expression="angka1&gt;angka2">
+                <then>
+                    <if expression="angka2&gt;angka3">
+                        <then>
+                            <assign variable="mid" expression="angka2"/>
+                        </then>
+                        <else>
+                            <if expression="angka1&gt;angka3">
+                                <then>
+                                    <assign variable="mid" expression="angka3"/>
+                                </then>
+                                <else>
+                                    <assign variable="mid" expression="angka1"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="angka1&gt;angka3">
+                        <then>
+                            <assign variable="mid" expression="angka1"/>
+                        </then>
+                        <else>
+                            <if expression="angka2&gt;angka3">
+                                <then>
+                                    <assign variable="mid" expression="angka3"/>
+                                </then>
+                                <else>
+                                    <assign variable="mid" expression="angka2"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;bilangan dengan nilai tengah &quot; &amp;mid" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
